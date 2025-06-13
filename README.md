@@ -14,7 +14,7 @@ SKY AI is a comprehensive machine learning platform designed to democratize AI m
 ## 📸 Platform Screenshots
 
 ### 1. Model Performance Analyzer
-![Model Performance Dashboard](screenshots/model-performance-analyzer.png)
+![Model Performance Dashboard](img/1.png)
 
 The **Model Performance Analyzer** provides comprehensive insights into your trained models:
 - **Real-time Performance Tracking**: Interactive bar charts showing prediction correctness across different categories
@@ -23,7 +23,7 @@ The **Model Performance Analyzer** provides comprehensive insights into your tra
 - **Interactive Visualization**: Dynamic charts that update as you select different analysis parameters
 
 ### 2. Model Training Interface
-![Model Training Dashboard](screenshots/model-training-interface.png)
+![Model Training Dashboard](img/2.png)
 
 Our **Dual Model Training Architecture** supports both traditional ML and deep learning:
 - **Deep Learning Configuration**: 
@@ -36,7 +36,7 @@ Our **Dual Model Training Architecture** supports both traditional ML and deep l
 - **Unified Training**: "Train Selected Models" button to execute both model types simultaneously
 
 ### 3. Data Preprocessing & Exploration
-![Data Preprocessing Interface](screenshots/data-preprocessing.png)
+![Data Preprocessing Interface](img/3.png)
 
 The **Preprocessing Data** module offers comprehensive data preparation:
 - **Interactive Data Table**: Live view of your dataset with sortable columns (sepal length, sepal width, petal length, petal width, actual)
@@ -47,7 +47,7 @@ The **Preprocessing Data** module offers comprehensive data preparation:
 - **Real-time Data Preview**: Immediate visualization of data transformations
 
 ### 4. Comprehensive Data Reports
-![Data Analysis Report](screenshots/data-report.png)
+![Data Analysis Report](img/4.png)
 
 Our **Fixed Data Report** provides in-depth analysis:
 - **Missing Values Analysis**: Detailed breakdown showing data completeness (0 missing values across all columns)
@@ -60,7 +60,7 @@ Our **Fixed Data Report** provides in-depth analysis:
   - Negative correlations identified (-0.42 between sepal width and length)
 
 ### 5. Advanced Data Visualization
-![Home Dashboard Visualization](screenshots/home-visualization.png)
+![Home Dashboard Visualization](img/5.png)
 
 The **Home Dashboard** features sophisticated visualization tools:
 - **Statistical Distribution**: Histogram with KDE overlay showing data distribution
