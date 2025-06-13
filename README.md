@@ -9,9 +9,70 @@
 
 SKY AI is a comprehensive machine learning platform designed to democratize AI model development. Our intuitive web-based interface empowers users to build professional-grade machine learning models without extensive coding knowledge, following a streamlined workflow from data exploration to model deployment.
 
-## ✨ Key Features
+🌐 **Try SKY AI Live**: [Multi-Page & Preprocessing App](https://sky-ai-preprocessing.herokuapp.com) - Experience the full platform with interactive demos and sample datasets.
 
-### 🔍 **Intelligent Data Exploration**
+## 📸 Platform Screenshots
+
+### 1. Model Performance Analyzer
+![Model Performance Dashboard](screenshots/model-performance-analyzer.png)
+
+The **Model Performance Analyzer** provides comprehensive insights into your trained models:
+- **Real-time Performance Tracking**: Interactive bar charts showing prediction correctness across different categories
+- **Error Distribution Analysis**: Pie charts visualizing error patterns with detailed percentages (50% accuracy, 37.5% error rate, 12.5% callbacks)
+- **Category-wise Breakdown**: Detailed analysis of model performance for each data category
+- **Interactive Visualization**: Dynamic charts that update as you select different analysis parameters
+
+### 2. Model Training Interface
+![Model Training Dashboard](screenshots/model-training-interface.png)
+
+Our **Dual Model Training Architecture** supports both traditional ML and deep learning:
+- **Deep Learning Configuration**: 
+  - Customizable layer architecture with intuitive number input
+  - "Configure Layers" button for advanced neural network setup
+  - Target column selection for supervised learning
+- **Machine Learning Models**:
+  - Dropdown selection for various algorithms (Random Forest, SVM, etc.)
+  - Target column specification for different ML approaches
+- **Unified Training**: "Train Selected Models" button to execute both model types simultaneously
+
+### 3. Data Preprocessing & Exploration
+![Data Preprocessing Interface](screenshots/data-preprocessing.png)
+
+The **Preprocessing Data** module offers comprehensive data preparation:
+- **Interactive Data Table**: Live view of your dataset with sortable columns (sepal length, sepal width, petal length, petal width, actual)
+- **Preprocessing Methods**: Dropdown selection for various cleaning techniques
+- **Action Buttons**: 
+  - "Configure & Run" for executing preprocessing pipelines
+  - "Download New Data" for exporting cleaned datasets
+- **Real-time Data Preview**: Immediate visualization of data transformations
+
+### 4. Comprehensive Data Reports
+![Data Analysis Report](screenshots/data-report.png)
+
+Our **Fixed Data Report** provides in-depth analysis:
+- **Missing Values Analysis**: Detailed breakdown showing data completeness (0 missing values across all columns)
+- **Outlier Detection**: IQR method identification of potential outliers in sepal_length and sepal_width
+- **Data Type Classification**: 
+  - General types (Numeric for all measurement columns)
+  - Specific types (Float64 for precise measurements)
+- **Correlation Heatmap**: Interactive correlation matrix showing relationships between features
+  - Strong correlations highlighted (0.96 between petal dimensions)
+  - Negative correlations identified (-0.42 between sepal width and length)
+
+### 5. Advanced Data Visualization
+![Home Dashboard Visualization](screenshots/home-visualization.png)
+
+The **Home Dashboard** features sophisticated visualization tools:
+- **Statistical Distribution**: Histogram with KDE overlay showing data distribution
+  - Median (1.00), Mean (1.25), and Mode (2.00) clearly marked
+  - Real-time statistical calculations
+- **3D Scatter Plot**: Interactive three-dimensional data exploration
+  - Multi-colored point clusters representing different categories
+  - Rotatable 3D visualization for comprehensive data understanding
+  - Custom axis selection for different feature combinations
+- **Column Selection Interface**: Dropdown menus for dynamic plot customization
+
+## ✨ Key Features
 - **Interactive Visualizations**: Comprehensive data analysis with histograms, scatter plots, and correlation heatmaps
 - **Outlier Detection**: Automated identification and visualization of data anomalies using IQR methods
 - **Statistical Insights**: Real-time statistical summaries with median, mean, and mode calculations
@@ -65,107 +126,141 @@ Node.js >= 14.0 (for advanced frontend features)
 
 ## 🚀 Quick Start
 
-### Installation
+🌐 **No Installation Required!** Try SKY AI directly in your browser:
+👉 **[Launch SKY AI Platform](https://sky-ai-preprocessing.herokuapp.com)**
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/sky-ai.git
-cd sky-ai
-
-# Create virtual environment
-python -m venv sky_ai_env
-source sky_ai_env/bin/activate  # On Windows: sky_ai_env\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Running the Application
-
-```bash
-# Start the application
-python app.py
-
-# Access the platform
-# Navigate to http://localhost:8050 in your browser
-```
+Simply click the link above and start building your ML models instantly!
 
 ## 📁 Project Structure
 
 ```
-sky-ai/
-├── app.py                 # Main application entry point
-├── requirements.txt       # Python dependencies
-├── README.md             # Project documentation
-├── assets/               # Static assets (CSS, JS, images)
-├── components/           # Reusable Dash components
-│   ├── data_explorer.py  # Data visualization components
-│   ├── preprocessor.py   # Data cleaning components
-│   ├── model_trainer.py  # ML/DL training components
-│   └── model_tester.py   # Model evaluation components
-├── models/               # Saved model files
-├── data/                 # Sample datasets
-├── utils/                # Utility functions
-│   ├── data_processing.py
-│   ├── model_utils.py
-│   └── visualization.py
-└── docs/                 # Additional documentation
+🏗️ SKY AI Platform Architecture
+│
+├── 🎨 Frontend Components
+│   ├── 🏠 Home Dashboard (Data Visualization)
+│   ├── 📊 Data Preprocessing Interface  
+│   ├── 🤖 Model Training Hub
+│   ├── 📈 Performance Analytics
+│   └── 🔍 Model Testing Suite
+│
+├── ⚙️ Core Engine
+│   ├── 🧹 Data Cleaning Pipeline
+│   ├── 🧠 ML Algorithm Library
+│   ├── 🎯 Deep Learning Models
+│   └── 📊 Visualization Engine
+│
+└── 💾 Data Management
+    ├── 📁 Uploaded Datasets
+    ├── 🤖 Trained Models
+    └── 📋 Analysis Reports
 ```
 
-## 💡 Usage Guide
+## 🎯 Platform Workflow
 
-### 1. Data Import & Exploration
-1. **Upload Dataset**: Drag and drop your CSV file or select from local storage
-2. **Explore Data**: Use interactive visualizations to understand data patterns
-3. **Identify Outliers**: Review automated outlier detection results
-4. **Statistical Analysis**: Examine distribution plots and correlation matrices
+```mermaid
+graph TD
+    A[📊 Upload Dataset] --> B[🔍 Data Exploration]
+    B --> C[📈 Statistical Analysis]
+    C --> D[🧹 Data Preprocessing]
+    D --> E[🤖 Model Training]
+    E --> F[📊 Performance Analysis]
+    F --> G[✅ Model Testing]
+    
+    B --> B1[Interactive Visualizations]
+    B --> B2[3D Scatter Plots]
+    B --> B3[Distribution Analysis]
+    
+    C --> C1[Missing Values Report]
+    C --> C2[Outlier Detection]
+    C --> C3[Correlation Heatmap]
+    
+    D --> D1[Automated Cleaning]
+    D --> D2[Feature Engineering]
+    D --> D3[Data Validation]
+    
+    E --> E1[🧠 Deep Learning]
+    E --> E2[⚙️ Machine Learning]
+    E1 --> E3[Neural Network Config]
+    E2 --> E4[Algorithm Selection]
+    
+    F --> F1[Accuracy Metrics]
+    F --> F2[Error Distribution]
+    F --> F3[Category Analysis]
+    
+    style A fill:#ff9999
+    style B fill:#99ccff
+    style C fill:#99ff99
+    style D fill:#ffcc99
+    style E fill:#cc99ff
+    style F fill:#ffff99
+    style G fill:#99ffcc
+```
 
-### 2. Data Preprocessing
-1. **Access Data Report**: Review comprehensive data quality assessment
-2. **Configure Preprocessing**: Select appropriate cleaning methods
-3. **Apply Transformations**: Execute automated data cleaning pipeline
-4. **Validate Results**: Review processed data quality metrics
+## 🎨 Interactive Features Flow
 
-### 3. Model Training
-1. **Choose Model Type**: Select between Deep Learning or Machine Learning approaches
-2. **Configure Parameters**: 
-   - **Deep Learning**: Set layers, neurons, activation functions
-   - **Machine Learning**: Choose algorithms and hyperparameters
-3. **Train Models**: Execute training with real-time progress monitoring
-4. **Compare Performance**: Evaluate multiple models simultaneously
+```mermaid
+sequenceDiagram
+    participant User
+    participant Platform
+    participant DataEngine
+    participant MLEngine
+    participant Visualizer
+    
+    User->>Platform: Upload CSV Data
+    Platform->>DataEngine: Process Dataset
+    DataEngine->>Visualizer: Generate Charts
+    Visualizer-->>User: 📊 Interactive Dashboard
+    
+    User->>Platform: Configure Preprocessing
+    Platform->>DataEngine: Clean & Transform
+    DataEngine-->>User: 📋 Quality Report
+    
+    User->>Platform: Select Model Type
+    Platform->>MLEngine: Train Models
+    MLEngine->>MLEngine: Deep Learning + ML
+    MLEngine-->>Visualizer: Performance Metrics
+    Visualizer-->>User: 📈 Real-time Results
+    
+    User->>Platform: Test Model
+    Platform->>MLEngine: Generate Predictions
+    MLEngine-->>User: ✅ Final Results
+```
 
-### 4. Model Evaluation
-1. **Performance Analysis**: Review accuracy metrics and error distributions
-2. **Prediction Testing**: Upload test data for model validation
-3. **Visual Insights**: Analyze prediction correctness by category
-4. **Export Results**: Download trained models and performance reports
+## 🏗️ Platform Architecture
 
-## 📊 Sample Workflow
-
-```python
-# Example: Complete ML Pipeline
-import sky_ai
-
-# Initialize platform
-platform = sky_ai.Platform()
-
-# Load and explore data
-data = platform.load_data('your_dataset.csv')
-platform.explore_data(data)
-
-# Preprocess data
-cleaned_data = platform.preprocess(data, methods=['outlier_removal', 'normalization'])
-
-# Train multiple models
-models = platform.train_models(
-    data=cleaned_data,
-    target_column='your_target',
-    model_types=['random_forest', 'neural_network']
-)
-
-# Evaluate and compare
-results = platform.evaluate_models(models, test_data)
-platform.generate_report(results)
+```mermaid
+graph LR
+    subgraph "Frontend Layer"
+        A[🎨 Plotly Dash UI]
+        B[📱 Responsive Design]
+        C[🎯 Interactive Components]
+    end
+    
+    subgraph "Processing Layer"
+        D[🔄 Data Pipeline]
+        E[🧠 ML Algorithms]
+        F[📊 Visualization Engine]
+    end
+    
+    subgraph "Data Layer"
+        G[📁 File Storage]
+        H[🗄️ Model Repository]
+        I[📈 Results Cache]
+    end
+    
+    A --> D
+    B --> E
+    C --> F
+    D --> G
+    E --> H
+    F --> I
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#fce4ec
+    style F fill:#f1f8e9
 ```
 
 ## 🎯 Use Cases
@@ -176,36 +271,61 @@ platform.generate_report(results)
 - **Education**: Student performance prediction, personalized learning paths
 - **Research**: Scientific data analysis, experimental result validation
 
-## 🔧 Configuration
+## 📊 Feature Demonstration
 
-### Environment Variables
-```bash
-# .env file
-DEBUG=True
-SECRET_KEY=your_secret_key_here
-DATABASE_URL=sqlite:///sky_ai.db
-MAX_UPLOAD_SIZE=100MB
-MODEL_STORAGE_PATH=./models/
+### 🎭 Animated Workflow Preview
+
+```
+    📁 Upload Data
+         ↓
+    🔍 Analyze & Explore  ←→  📊 Interactive Charts
+         ↓
+    🧹 Clean & Process    ←→  📋 Quality Reports  
+         ↓
+    🤖 Train Models      ←→  ⚡ Real-time Progress
+         ↓
+    📈 Test & Validate   ←→  ✅ Performance Metrics
 ```
 
-### Custom Model Configuration
-```python
-# config.py
-ML_MODELS = {
-    'random_forest': {'n_estimators': 100, 'max_depth': 10},
-    'svm': {'kernel': 'rbf', 'C': 1.0},
-    'gradient_boosting': {'learning_rate': 0.1, 'n_estimators': 100}
-}
+### 🎨 Visual Data Journey
 
-DL_MODELS = {
-    'default_nn': {
-        'layers': [64, 32, 16],
-        'activation': 'relu',
-        'optimizer': 'adam',
-        'loss': 'mse'
-    }
-}
 ```
+Step 1: Data Upload
+┌─────────────────────────┐
+│ 📊 [Drag & Drop CSV]   │ → Raw Data Analysis
+│ ✓ test_data.csv loaded │
+└─────────────────────────┘
+
+Step 2: Smart Analysis  
+┌─────────────────────────┐
+│ 📈 Distribution Plots  │ → Pattern Recognition
+│ 🎯 3D Scatter View     │
+│ 📊 Correlation Matrix  │
+└─────────────────────────┘
+
+Step 3: Data Cleaning
+┌─────────────────────────┐
+│ 🧹 Remove Outliers     │ → Clean Dataset
+│ 🔧 Fix Missing Values  │
+│ ✨ Feature Engineering │
+└─────────────────────────┘
+
+Step 4: Model Magic
+┌─────────────────────────┐
+│ 🧠 Neural Networks     │ → Intelligent Predictions
+│ ⚙️  ML Algorithms      │
+│ 🎯 Performance Tuning  │
+└─────────────────────────┘
+```
+
+### 🌟 Interactive Elements
+
+| Feature | Visual Effect | User Benefit |
+|---------|---------------|--------------|
+| 📊 **Real-time Charts** | `▓▓▓▓▓░░░░░ 50%` | Instant feedback |
+| 🎯 **3D Visualizations** | `🔄 Rotating plots` | Deep insights |
+| 📈 **Progress Tracking** | `⚡ Live updates` | Transparency |
+| 🎨 **Dynamic UI** | `✨ Smooth transitions` | Great UX |
 
 ## 🤝 Contributing
 
