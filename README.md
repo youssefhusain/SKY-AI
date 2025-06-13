@@ -91,29 +91,7 @@ The **Home Dashboard** features sophisticated visualization tools:
 - **Export Capabilities**: Download cleaned datasets for external use
 
 
-## 📁 Project Structure
 
-```
-🏗️ SKY AI Platform Architecture
-│
-├── 🎨 Frontend Components
-│   ├── 🏠 Home Dashboard (Data Visualization)
-│   ├── 📊 Data Preprocessing Interface  
-│   ├── 🤖 Model Training Hub
-│   ├── 📈 Performance Analytics
-│   └── 🔍 Model Testing Suite
-│
-├── ⚙️ Core Engine
-│   ├── 🧹 Data Cleaning Pipeline
-│   ├── 🧠 ML Algorithm Library
-│   ├── 🎯 Deep Learning Models
-│   └── 📊 Visualization Engine
-│
-└── 💾 Data Management
-    ├── 📁 Uploaded Datasets
-    ├── 🤖 Trained Models
-    └── 📋 Analysis Reports
-```
 
 ## 🎯 Platform Workflow
 
