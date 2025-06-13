@@ -60,7 +60,7 @@ Our **Fixed Data Report** provides in-depth analysis:
   - Negative correlations identified (-0.42 between sepal width and length)
 
 ### 5. Advanced Data Visualization
-![Home Dashboard Visualization](img/3.png)
+![Home Dashboard Visualization](img/5.png)
 
 The **Home Dashboard** features sophisticated visualization tools:
 - **Statistical Distribution**: Histogram with KDE overlay showing data distribution
