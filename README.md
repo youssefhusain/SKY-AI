@@ -3,7 +3,7 @@
 ![SKY AI Logo](https://img.shields.io/badge/SKY%20AI-Professional%20ML%20Platform-blue?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python)
 ![Plotly](https://img.shields.io/badge/Plotly-Dash-brightgreen?style=flat-square&logo=plotly)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-squar)
 
 
 
@@ -202,4 +202,4 @@ graph LR
     style E fill:#fce4ec
     style F fill:#f1f8e9
 ```
-
+![SKY AI](http://127.0.0.1:8054/)
