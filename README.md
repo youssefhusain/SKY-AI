@@ -202,4 +202,4 @@ graph LR
     style E fill:#fce4ec
     style F fill:#f1f8e9
 ```
-![SKY AI](http://127.0.0.1:8054/)
+[SKY AI](http://127.0.0.1:8054/)
